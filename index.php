@@ -1,4 +1,4 @@
 <?php 
-#prueba    ____________2
-
+#prueba 2
+//prueba
 ?>
