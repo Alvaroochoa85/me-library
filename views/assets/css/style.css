@@ -1,0 +1,29 @@
+body{
+	background: #f0f3f5;
+	 
+}
+
+header, footer, .menu-loans{
+	background: #434343!important;
+    color: #beb6a3;
+    padding: 4px;
+}
+a.nav-link{
+	background: #434343!important;
+	color: #beb6a3 !important; 
+}
+
+a.nav-link:hover{
+	color: #e7e2d8 !important;
+	text-decoration: none;
+}
+a.nav-link:active{
+	color: red;
+}
+a.info:hover{
+	cursor: pointer;
+	text-decoration: none;
+}
+.book:hover{
+	box-shadow: -3px 4px #88888888;
+}

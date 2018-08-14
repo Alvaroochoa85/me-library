@@ -1,0 +1,22 @@
+body{
+	background: #f0f3f5;
+	 
+}
+
+header, footer{
+	background: #434343!important;
+    color: #beb6a3;
+    padding: 4px;
+}
+a{
+	background: #434343!important;
+	color: #beb6a3 !important; 
+}
+
+a:hover{
+	color: #e7e2d8 !important;
+	text-decoration: none;
+}
+a:active{
+	color: red;
+}
