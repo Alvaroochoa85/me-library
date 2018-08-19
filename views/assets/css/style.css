@@ -27,3 +27,7 @@ a.info:hover{
 .book:hover{
 	box-shadow: -3px 4px #88888888;
 }
+
+#error-login{
+	float: left;
+}

@@ -12,5 +12,4 @@
 			$response = RoutesModel::route($request);
 		}
 	}
-
 ?>

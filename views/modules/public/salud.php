@@ -28,5 +28,4 @@
 		</div>
 	</div>
 </div>
-
 <?php include("../foot.php"); ?>

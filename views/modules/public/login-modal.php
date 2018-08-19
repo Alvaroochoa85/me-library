@@ -1,4 +1,3 @@
-
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="login-title" aria-hidden="true">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
@@ -31,7 +30,11 @@
     </div>
   </div>
 </div>
-<?php  
+<?php
+  require_once("../../../controllers/AuthController.php");
+  require_once("../../../models/AuthModel.php");
+  
+  
   if (isset($_POST["iniciar"])) {
     $log = new AuthController();
     $log->login();
