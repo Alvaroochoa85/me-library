@@ -7,15 +7,15 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form method="post">
+      <form method="post" id="login-form" onsubmit="return validateLogin()">
         <div class="modal-body">
             <div class="form-group">
               <label for="username" class="col-form-label">Email:</label>
-              <input type="mail" class="form-control" id="username" name="email" placeholder="example@email.com">
+              <input type="mail" class="form-control" id="username-login" name="email" required placeholder="example@email.com">
             </div>
             <div class="form-group">
               <label for="password" class="col-form-label">Contraseña:</label>
-              <input type="password" class="form-control" id="password" name="password" placeholder="**********">
+              <input type="password" class="form-control" id="password-login" name="password" required placeholder="**********">
             </div>
             <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" name="admin" id="admin-login">
@@ -33,7 +33,6 @@
 <?php
   require_once("../../../controllers/AuthController.php");
   require_once("../../../models/AuthModel.php");
-  
   
   if (isset($_POST["iniciar"])) {
     $log = new AuthController();
