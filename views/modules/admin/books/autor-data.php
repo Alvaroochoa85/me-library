@@ -1,12 +1,21 @@
 <div class="form-group row">
 	<h4 class="col-12">Datos del autor</h4>
 </div>
-<div class="form-group row">
-	<select name="select-autors" id="autor-create" class="form-control select-autor col-9" data-placeholder="Seleciona autor/es">
-		<option value="Reznik">Reznik</option>
+<div class="form-group row justify-content-between">
+	<select name="select-autors" id="autor-add" class="form-control col-6">
+		<option value="none" disabled selected>Seleccionar autor</option>
+		<option value="Robert Resnick">Robert Resnick</option>
+		<option value="Pablo Risk">Pablo Risk</option>
+	</select>
+	<select name="select-tipo-autors" id="autor-tipo" class="form-control col-4">
+		<option value="none" disabled selected>Tipo autor</option>
+		<option value="Principal">Principal</option>
+		<option value="Colaborador">Colaborador</option>
+		<option value="Ilustrador">Ilustrador</option>
+		<option value="Traductor">Traductor</option>
 	</select>
 	<div class="col-2">
-		<a href="#" class="material-icons">how_to_reg</a>
+		<a href="#" id="add-autor"class="material-icons">how_to_reg</a>
 		<a href="" class="material-icons" data-toggle="modal" data-target="#create-autor">person_add</a>
 	</div>	
 </div>
@@ -21,13 +30,8 @@
 				<th scope="col">Tipo</th>
 			</tr>
 		</thead>
-		<tbody>
-			<tr>
-				<th scope="row">1</th>
-				<td>Mark</td>
-				<td>Otto</td>
-				<td>Principal</td>
-			</tr>
+		<tbody id="tbody">
+
 		</tbody>
 	</table>
 </div>

@@ -1,5 +1,20 @@
 $(document).ready(function(){
+	//Agregando elementos a la tabla de autores
+	$("#add-autor").click(function(){
+		nombre    = $("#autor-add").val();
+		tipoAutor = $("#autor-tipo").val();
 
+		if (nombre != null && tipoAutor != null){
+			nombre = nombre.split(" ");
+			cantRow = $("#list-autors tr").length;
+			row = '<tr><th scope="row">'+ cantRow +'</th><td>' + nombre[0] +'</td><td>'+ nombre[1] +'</td><td>'+ tipoAutor +'</td></tr>'
+			$("#tbody").append(row);
+		}
+		else{
+			alert("Campos vacio");
+		}
+		
+	});
 	//Control de imagenes
 	$("#user-img").change(function( ) {
 		image = this.files[0];
