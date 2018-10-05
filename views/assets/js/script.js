@@ -5,14 +5,23 @@ $(document).ready(function(){
 	});
 
 	$( function(){
-    	$( "#datepicker" ).datepicker();
+    	$("#datepicker" ).datepicker();
   	});
 
-
 	//Chosen: tags style select
+	$('#autor-data-tab').click(function(){
+		$(".nav").find(".active", function(){
+			$('.select-autor').chosen({
+				no_results_text: "Autor no registrado"
+			});
+		});
+			
+	});
+
+
 	$('.select-autor').chosen({
 		no_results_text: "Autor no registrado"
-	});
+	});		
 
 	$('.select-editorial').chosen({
 		no_results_text: "Editorial no registrado"
@@ -27,5 +36,4 @@ $(document).ready(function(){
 			return true;
 		}
 	}
-
 });

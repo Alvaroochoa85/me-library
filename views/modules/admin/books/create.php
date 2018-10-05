@@ -1,53 +1,33 @@
-<form method="post" class="mt-5">
-	<div class="form-group row">
-		<h4 class="col-12">Agregar nuevo libro</h4>
+<form method="post" action="" class="mt-5">￼
+	<nav>
+		<div class="nav nav-tabs justify-content-end" id="nav-tab" role="tablist">
+			<a class="nav-item nav-link active" id="book-data-tab" data-toggle="tab" href="#book-data" role="tab">Datos libro</a>
+			<a class="nav-item nav-link" id="autor-data-tab" data-toggle="tab" href="#autor-data" role="tab">Datos autor </a>
+			<a class="nav-item nav-link" id="editorial-data-tab" data-toggle="tab" href="#editorial-data" role="tab">Datos editorial</a>
+			<a class="nav-item nav-link" id="catalographic-data-tab" data-toggle="tab" href="#catalographic-data" role="tab">Datos catalografico</a>
+		</div>
+	</nav>
+	<div class="tab-content" id="book-create-tab">
+		<div class="tab-pane fade show active" id="book-data" role="tabpanel">
+			<?php @include("book-data.php"); ?>
+		</div>
+		<div class="tab-pane fade" id="autor-data" role="tabpanel">
+			<?php @include("autor-data.php") ?>
+		</div>
+		<div class="tab-pane fade" id="editorial-data" role="tabpanel">
+			<?php @include("editorial-data.php") ?>
+		</div>
+		<div class="tab-pane fade" id="catalographic-data" role="tabpanel">
+			<?php @include("catalographic-data.php") ?>
+		</div>
 	</div>
-	<div class="form-group row">
-		<input type="text" class="form-control col-8" id="title" placeholder="Titulo del libro">
+	<div class="row justify-content-between">
+		<input class="col-4" type="submit" name="save-book" value="Agregar libro">
+		<input class="col-4" type="button" name="" value="Cancelar">
 	</div>
-	<div class="form-group row">
-		<select data-placeholder="Seleciona autor/es" multiple class="form-control select-autor col-8">
-			<option value="Reznik">Reznik</option>
-			<option value="Pepito Perez">Pepito Perez</option>
-			<option value="Junito">Junito</option>
-		</select>
-		<a href="" class="material-icons col-1" data-toggle="modal" data-target="#create-autor">add</a>
-		
-	</div>
-	<div class="form-group row">
-		<select data-placeholder="Seleciona editorial/es" multiple class="form-control select-editorial col-8">
-			<option value="Sol">Sol</option>
-			<option value="Nueva luna">Nueva luna</option>
-			<option value="Venus">Venus</option>
-		</select>
-		<a href="" class="material-icons col-1" data-toggle="modal" data-target="#create-editorial">add</a>
-	</div>
-	<div class="form-group row">
-		<input type="text" class="form-control col-8" id="title" placeholder="Titulo del libro">
-	</div>
-	<div class="form-group row">
-		<input type="text" class="form-control col-8" id="title" placeholder="Titulo del libro">
-	</div>
-	<div class="form-group row">
-		<input type="text" class="form-control col-8" id="title" placeholder="Titulo del libro">
-	</div>
-	<div class="form-group row">
-		<input type="text" class="form-control col-8" id="title" placeholder="Titulo del libro">
-	</div>
-	<div class="form-group row">
-		<input type="text" class="form-control col-8" id="title" placeholder="Titulo del libro">
-	</div>
-	<div class="form-group row">
-		<input type="text" class="form-control col-8" id="title" placeholder="Titulo del libro">
-	</div>
-	<div class="form-group row">
-		<input type="text" class="form-control col-8" id="title" placeholder="Titulo del libro">
-	</div>
-	<div class="form-group row">
-		<input type="text" class="form-control col-8" id="title" placeholder="Titulo del libro">
-	</div>
+	kendoui
 </form>
-
-<?php include("create-autor-modal.php");
-	  include("create-editorial-modal.php"); 
+<?php 
+	include("create-autor-modal.php");
+	include("create-editorial-modal.php"); 
 ?>

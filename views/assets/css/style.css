@@ -1,6 +1,5 @@
 body{
-	background: #f0f3f5;
-	 
+	background: #f0f3f5; 
 }
 
 header, footer, .menu-loans{
@@ -14,11 +13,11 @@ a.nav-link{
 }
 
 a.nav-link:hover{
-	color: #e7e2d8 !important;
+	color: #FFDE99 !important;
 	text-decoration: none;
 }
-a.nav-link:active{
-	color: red;
+ a.active{
+	color: #FFDE99 !important;
 }
 a.info:hover{
 	cursor: pointer;
@@ -27,7 +26,26 @@ a.info:hover{
 .book:hover{
 	box-shadow: -3px 4px #88888888;
 }
-
+textarea {
+   resize: none;
+}
 #error-login{
 	float: left;
+}
+
+#cover-preview{
+	background-image: url("../images/cover.png");
+	background-size: cover;
+	border: 1px black solid;
+	height: 200px;
+	width: 150px;
+	
+}
+
+#user-pic{
+	background-image: url("../images/default-user.png");
+	background-size: cover;
+	border: 1px black solid;
+	height: 150px;
+	width: 150px;
 }

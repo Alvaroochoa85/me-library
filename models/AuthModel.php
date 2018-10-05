@@ -1,12 +1,12 @@
 <?php 
-	
 	require_once "ConexionModel.php";
-	class AuthModels{
+	
+	class AuthModel{
 		public function loginModel($request){
 			if($request["admin"] == "on"){
 				$query = ConexionModel::conect()->prepare("SELECT mail, password FROM administrador WHERE mail = :mail AND password = :password");
 			}
-			else{
+			else{	
 				$query = ConexionModel::conect()->prepare("SELECT mail, password FROM usuario WHERE mail = :mail AND password = :password");
 			}
 			//Enlaces de parametros

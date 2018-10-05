@@ -1,6 +1,6 @@
 <?php 
   include("../head.php"); 
-  include("header.php");
+  include("../header.php");
 ?>
 
 <div class="row">
