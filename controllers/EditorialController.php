@@ -4,8 +4,8 @@
 		#insertar editorial
 		public function store (){
 			
-			$request=array("editorial-name"  => $_POST["editorial-name"],
-						  	 "editorial-address" => $_POST["editorial-address"]);
+			$request=array("editorial-name"    => $_POST["editorial-name"],
+						   "editorial-address" => $_POST["editorial-address"]);
 						  	 
 			$response = EditorialModel::storeModel($request); 
 
@@ -15,14 +15,6 @@
 			else{
 				echo "error";
 			}
-
 		}
-		
-
-
-
 	}
-
-
-
 ?>
