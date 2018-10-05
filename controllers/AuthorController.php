@@ -4,8 +4,8 @@
 		
 		public function store(){
 			$request = array("autor-name"     => $_POST["autor-name"],
-						  	 "autor-lastname" => $_POST["autor-lastname"],
-						  	 "dni"            => 33493684);
+						  	 "autor-lastname" => $_POST["autor-lastname"]);
+						  	 
 
 			$response = AuthorModel::storeModel($request);
 			if ($response){
