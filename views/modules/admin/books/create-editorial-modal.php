@@ -1,4 +1,4 @@
-<form method="post" action="">
+<form method="post" >
   <div  class="modal fade" id="create-editorial" tabindex="-1">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -19,10 +19,22 @@
           </form>
         </div>
         <div class="modal-footer">
-          <button type="submit" class="btn btn-primary">Crear</button>
+          <button type="submit" class="btn btn-primary" name="enviar">Crear</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
         </div>
       </div>
     </div>
   </div>
+
 </form>
+<?php
+  require_once("../../../../controllers/EditorialController.php");
+  require_once("../../../../models/EditorialModel.php");
+
+    if (isset($_POST["enviar"])) {
+      $createEditorial=new EditorialController();
+      $createEditorial->store();
+      
+    }
+
+?>
