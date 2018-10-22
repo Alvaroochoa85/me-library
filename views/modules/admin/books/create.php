@@ -29,11 +29,13 @@
 </form>
 <?php 
 
- require_once("../../../../controllers/BookController.php");
 	include("create-autor-modal.php");
 	include("create-editorial-modal.php"); 
-require_once("../../../../models/BookModel.php");
 
+
+require_once("../../../../models/BookModel.php");
+ require_once("../../../../controllers/BookController.php");
+ 
 	if(isset($_POST["save-book"])){
 		$librito=new BookController();
 		$librito->store();

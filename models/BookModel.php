@@ -4,7 +4,7 @@
 
 		public function storeModel($request){
 
-		 $query = ConexionModel::conect()->prepare("INSERT INTO libro (isbn, titulo,tema_cdu,descripcion,volumen,año, paginas,edicion, ejemplar_unico,id_idioma,id_editorial) VALUES ((:isbn, :titulo,:cdu,:descripcion,:volumen,:año, :paginas,:edicion,:ejemplar_unico,:id_idioma,:id_editorial");
+		 	$query = ConexionModel::conect()->prepare("INSERT INTO libro (isbn, titulo,tema_cdu,descripcion,volumen,año, paginas,edicion, ejemplar_unico,idioma_ididioma,id_editorial) VALUES (:isbn, :titulo,:cdu,:descripcion,:volumen,:año, :paginas,:edicion,:ejemplar_unico,:id_idioma,:id_editorial)");
 
 //tomar idioma de la vista 
 			//Enlaces de parametros
