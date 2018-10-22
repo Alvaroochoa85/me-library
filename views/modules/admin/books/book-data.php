@@ -7,22 +7,11 @@
 		<div class="form-group row">
 			<input name="book-title" id="book-title" class="form-control col-12" type="text" placeholder="Titulo del libro" required>
 		</div>
-		<div class="form-group row">
-			<select name="book-vol" class="form-control col-5" required>
-				<option disabled selected >Selecionar volumen</option>
-				<option value="1">Vol. 1</option>
-				<option value="2">vol. 2</option>
-				<option value="3">Vol. 3</option>
-			</select>
-			<a href="" class="material-icons col-1" data-toggle="modal" data-target="#create-vol">add</a>
+		<div class="form-group row justify-content-between" >
+			<input name="isbn" type="text" class="form-control col-3"  placeholder="ISBN">
+			<input name="book-volumen" type="text" class="form-control col-3"  placeholder="Volumen">
+			<input name="book-edicion" type="text" class="form-control col-3"  placeholder="Edicion">
 
-			<select name="book-edision" class="form-control col-5" required>
-				<option disabled selected >Selecionar edición</option>
-				<option value="1">1º edición</option>
-				<option value="2">2º edición</option>
-				<option value="3">3º edición</option>
-			</select>
-			<a href="" class="material-icons col-1" data-toggle="modal" data-target="#create-vol">add</a>
 		</div>
 		<div class="form-group row justify-content-between">
 			<input name="book-year" type="text" class="form-control col-3"  placeholder="año">

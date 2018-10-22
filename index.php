@@ -6,4 +6,5 @@
 	include("views/modules/public/news.php"); 
 	include("views/modules/public/footer.php");
 	include("views/modules/foot.php"); 
+	
 ?>

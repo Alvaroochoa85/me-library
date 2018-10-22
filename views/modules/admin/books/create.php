@@ -1,4 +1,4 @@
-<form method="post" action="" class="mt-5">￼
+<form method="post"  class="mt-5">
 	<nav>
 		<div class="nav nav-tabs justify-content-end" id="nav-tab" role="tablist">
 			<a class="nav-item nav-link active" id="book-data-tab" data-toggle="tab" href="#book-data" role="tab">Datos libro</a>
@@ -19,15 +19,25 @@
 		</div>
 		<div class="tab-pane fade" id="catalographic-data" role="tabpanel">
 			<?php @include("catalographic-data.php") ?>
-		</div>
+		</div
 	</div>
 	<div class="row justify-content-between">
 		<input class="col-4" type="submit" name="save-book" value="Agregar libro">
 		<input class="col-4" type="button" name="" value="Cancelar">
 	</div>
-	kendoui
+
 </form>
 <?php 
+
+ require_once("../../../../controllers/BookController.php");
 	include("create-autor-modal.php");
 	include("create-editorial-modal.php"); 
+require_once("../../../../models/BookModel.php");
+
+	if(isset($_POST["save-book"])){
+		$librito=new BookController();
+		$librito->store();
+	}
 ?>
+
+
