@@ -28,7 +28,7 @@
 
 </form>
 <?php 
-<<<<<<< HEAD
+
 
 	include("create-autor-modal.php");
 	include("create-editorial-modal.php"); 
@@ -37,14 +37,8 @@
 require_once("../../../../models/BookModel.php");
  require_once("../../../../controllers/BookController.php");
  
-=======
-	include("create-autor-modal.php");
-	include("create-editorial-modal.php"); 
-
-    require_once("../../../../controllers/BookController.php");
-    require_once("../../../../models/BookModel.php");
 	
->>>>>>> a9bf36abcc767a146054030675a75090364fd27b
+
 	if(isset($_POST["save-book"])){
 		$librito = new BookController();
 		$librito->store();
