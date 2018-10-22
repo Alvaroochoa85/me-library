@@ -8,14 +8,14 @@
 			<input name="book-title" id="book-title" class="form-control col-12" type="text" placeholder="Titulo del libro" required>
 		</div>
 		<div class="form-group row justify-content-between" >
-			<input name="isbn" type="text" class="form-control col-3"  placeholder="ISBN">
-			<input name="book-volumen" type="text" class="form-control col-3"  placeholder="Volumen">
+			<input name="isbn" type="number" class="form-control col-3"  placeholder="ISBN">
+			<input name="book-volumen" type="number" class="form-control col-3"  placeholder="Volumen">
 			<input name="book-edicion" type="text" class="form-control col-3"  placeholder="Edicion">
 
 		</div>
 		<div class="form-group row justify-content-between">
 			<input name="book-year" type="text" class="form-control col-3"  placeholder="año">
-			<input name="book-pag" type="text" class="form-control col-3" placeholder="cantidad páginas">
+			<input name="book-pag" type="number" class="form-control col-3" placeholder="cantidad páginas">
 			
 			<select name="book-languaje" class="form-control col-3">	
 				<option disabled selected >Selecionar idioma</option>
