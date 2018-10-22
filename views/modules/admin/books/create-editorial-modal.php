@@ -32,7 +32,7 @@
   require_once("../../../../models/EditorialModel.php");
 
     if (isset($_POST["enviar"])) {
-      $createEditorial=new EditorialController();
+      $createEditorial = new EditorialController();
       $createEditorial->store();
       
     }

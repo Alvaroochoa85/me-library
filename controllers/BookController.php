@@ -6,7 +6,7 @@
 			$request=array("isbn"          => $_POST["isbn"],
 							"book-title"   => $_POST["book-title"],
 							"cdu"          => $_POST["cdu"],
-						   	"boocduk-volumen" => $_POST["book-volumen"],
+						   	"book-volumen" => $_POST["book-volumen"],
 						    "book-edicion" => $_POST["book-edicion"],
 						  	"book-year"    => $_POST["book-year"],
 						  	"book-pag"	   => $_POST["book-pag"],
