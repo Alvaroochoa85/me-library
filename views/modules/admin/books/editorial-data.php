@@ -3,6 +3,12 @@
 </div>
 <div class="form-group row">
 	<select name="select-editorial" data-placeholder="Selecionar editorial" class="form-control select-editorial col-8">
+		<!-- <php 
+			$i=1;
+			foreach($value)
+				echo "<option value="$i++">$value</option>"
+
+		 ?>-->
 		<option value="1">Patito</option>
 	</select>
 	<a href="" class="material-icons col-1" data-toggle="modal" data-target="#create-editorial">add</a>
