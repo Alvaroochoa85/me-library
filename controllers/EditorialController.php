@@ -18,7 +18,15 @@
 			}
 			else{
 				echo "error";
-			}		}
+			}		
+		}
+
+#ver editoriales
+		public function creade(){
+			$response = EditorialModel::creadeModel("editorial"); 
+
+
+		}
 	}
 
 ?>

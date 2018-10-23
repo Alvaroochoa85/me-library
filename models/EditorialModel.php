@@ -18,10 +18,23 @@ class EditorialModel
 			else{
 				return false;
 			}
-			
-
 
 	}
+
+
+###ver  editorial
+
+	public function createModel($table){
+			
+			$query=ConexionModel::conect()->prepare("SELECT nombre FROM $table  ");
+
+			$query->execute();
+ 			$request->query();
+
+			return $request;
+
+	}
+	
 }
 
 
