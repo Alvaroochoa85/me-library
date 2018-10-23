@@ -22,12 +22,10 @@
 		}
 
 #ver editoriales
-		/*public function creade(){
+		/*public function create(){
 			$response = EditorialModel::creadeModel("editorial"); 
-
-
-			foreach ($response as $now => $item) ){
-				echo "<option value="$item++">$value</option>"
+			
+			return $response;
 			
 			
 		}*/

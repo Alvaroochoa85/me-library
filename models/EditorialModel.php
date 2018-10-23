@@ -1,7 +1,6 @@
 <?php
 require_once "ConexionModel.php";
-class EditorialModel
-{
+class EditorialModel{
 	#insertar editorial
 	public function storeModel($request){
 	$query = ConexionModel::conect()->prepare("INSERT INTO editorial (nombre, direccion_fiscal) VALUES (:nombre, :direccion_fiscal)");
@@ -28,13 +27,13 @@ class EditorialModel
 			
 			$query=ConexionModel::conect()->prepare("SELECT nombre FROM $table  ");
 
-			$query->execute();
+			$query->query();
  			
 
-			return $query->fetchaAll();
+			return $query;
 			 $query->close();
-*/
-	}
+
+	}*/
 	
 }
 

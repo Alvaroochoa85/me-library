@@ -1,16 +1,20 @@
 	<?php
 	/*require_once("../../../../controllers/EditorialController.php");
-  	require_once("../../../../models/EditorialModel.php");*/
+  	  require_once("../../../../models/EditorialModel.php");*/
   	?>
 
 <div class="form-group row">
 	<h4 class="col-12">Datos de editorial</h4>
 </div>
 <div class="form-group row">
-	<select name="select-editorial" data-placeholder="Selecionar editorial" class="form-control select-editorial col-8">
+	<select name="select-editorial" class="form-control select-editorial col-8">
+		<option value="" disabled selected>Seleccione Editorial</option>
 		<?php/*
-			 $createEditorial = new EditorialController();
-      		$createEditorial->create();
+
+			$createEditorial = new EditorialController();
+      		$response = $createEditorial->create();
+      		foreach ($response as $value) ){
+				echo "<option value=" . $value . ">". $value ."</option>";
 			*/
 		
 		 ?>

@@ -28,20 +28,17 @@
 
 </form>
 <?php 
-
-
 	include("create-autor-modal.php");
 	include("create-editorial-modal.php"); 
-
-
-/* require_once("../../../../controllers/BookController.php");
+	require_once("../../../../controllers/BookController.php");
+	require_once("../../../../models/BookModel.php");
  
 	
 
 	if(isset($_POST["save-book"])){
 		$librito = new BookController();
 		$librito->store();
-	}*/
+	}
 ?>
 
 
