@@ -9,7 +9,7 @@
 			<input type="text" class="form-control col-5" id="user-lastname" name="user-lastname" placeholder="Apellido de usuario">
 		</div>
 		<div class="form-group row justify-content-around">
-			<input type="text" class="form-control col-4" id="user-dni" name="user-dni" placeholder="Dni de usuario">
+			<input type="text" class="form-control col-4 justNumbers" id="user-dni" name="user-dni" placeholder="Dni de usuario" onkeyup="copyOnPassword(event);">
 			<input type="email" class="form-control col-6" id="user-email" name="user-email" placeholder="Email de usuario">
 		</div>
 		<div class="form-group row justify-content-around">
@@ -23,6 +23,9 @@
 				<option value="4">Administrador</option>
 			</select>
 		</div>
+		<div class="form-group row justify-content-around">
+       		<input type="password" class="form-control col-3" id="user-password" name="user-password" placeholder="***********">
+		</div>
 		
 	</div>
 	<div class="col-2">
@@ -32,3 +35,18 @@
   		</div>
 	</div>
 </div>
+<script>
+	// Copiar lo que tiene dni en password
+	function copyOnPassword(event){
+		$('#user-password').val(($('#user-dni').val()));
+
+		//Function which allows only the entry numbers
+		$('.justNumbers').keypress(function(e){
+			var keynum = window.event ? window.event.keyCode : e.which;
+	   		if ((keynum == 48) || (keynum == 56))
+	        	return true;
+	    	return /\d/.test(String.fromCharCode(keynum));
+		});
+	}
+
+</script>
