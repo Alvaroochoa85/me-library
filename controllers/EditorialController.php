@@ -1,34 +1,24 @@
 <?php
-##create editorial
 	class EditorialController{
-		#insertar editorial
-		public function store (){
-			
 
-			
+		public function create(){
+			$response = EditorialModel::createModel(); 
+			return $response;
+		}
 
+		public function store(){
 			$request=array("editorial-name"    => $_POST["editorial-name"],
-
-						   "editorial-address" => $_POST["editorial-address"]);
-						  	 
+						   "editorial-address" => $_POST["editorial-address"]); 
 			$response = EditorialModel::storeModel($request); 
 
 			if ($response){
-				echo "Datos guardados";
+				echo '<div class="alert alert-success" role="alert">Editorial creada<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
 			}
 			else{
 				echo "error";
-			}		
+			}
+			header('Location:../views/modules/admin/books/index.php');		
 		}
 
-#ver editoriales
-		/*public function create(){
-			$response = EditorialModel::creadeModel("editorial"); 
-			
-			return $response;
-			
-			
-		}*/
 	}
-
-?>
+?>	
